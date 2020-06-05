@@ -1,0 +1,1181 @@
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="title" content="Банк Азии"/>
+    <meta name="language" content="ru" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Банк Азии" />
+        <link rel="alternate" href="/kg/" hreflang="ky-kg" />
+    <link rel="alternate" href="/" hreflang="ru-kg" />
+    <link rel="alternate" href="/en/" hreflang="en" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Банк Азии"/>
+    <meta property="og:url" content="https://www.bankasia.kg/ru/"/>
+    <meta property="og:title" content="Банк Азии"/>
+    <!-- 
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0"> -->
+
+    <title>Добро пожаловать - Банк Азии</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/stylesheets/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700%7CPT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext" />
+<link rel="stylesheet" type="text/css" media="screen" href="/assets/stylesheets/frontend.css?r=1584434012" />
+    <script type="text/javascript" src="/assets/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/javascripts/jquery.onepage-scroll.min.js"></script>
+<script type="text/javascript" src="/assets/javascripts/bootstrap.min.js"></script>
+    <script src="/assets/javascripts/script.js?nocache=1591356499"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/assets/javascripts/html5shiv.min.js"></script>
+    <script src="/assets/javascripts/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+
+        var LANG = 'ru';
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-91435453-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            if ($(window).width() > 768) {
+
+                function getRandomInRange(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+
+                $rand = getRandomInRange(1, 2);
+                $('body').append('<video id="video_bg" autoplay="autoplay" loop="loop" muted="muted"><source src="/assets/video/video-1.mp4" type="video/mp4"></source></video>');
+
+                var css = jQuery("<link>");
+                css.attr({
+                    rel:  "stylesheet",
+                    type: "text/css",
+                    href: "/assets/stylesheets/scroll.css"
+                });
+
+                $("head").append(css);
+                // var video = $('#video_bg');
+                // $video.get(0).load();
+                // $video.get(0).play();
+
+                var media = document.getElementById("video_bg");
+                const playPromise = media.play();
+                if (playPromise !== null){
+                    playPromise.catch(() => { media.play(); })
+                }
+
+            }
+        });
+    </script>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48108191 = new Ya.Metrika({ id:48108191, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ecommerce:"dataLayer" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
+
+<!-- Facebook Pixel Code -->
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+n.queue=[];t=b.createElement(e);t.async=!0;
+
+t.src=v;s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '608655669487664'); 
+
+fbq('track', 'PageView');
+
+</script>
+
+<noscript>
+
+<img height="1" width="1"
+
+src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
+
+</noscript>
+
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147987891-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147987891-1');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(55343191, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55343191" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+<body id="lang-ru" class="home">
+<div class="container-fluid lovz-main" style="display: none;">
+<style id="erastyle"></style>    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="">Размер шрифта</label><br>
+                    <button class="btn bt1 btn-default" title="Очень большой">A</button>
+                    <button class="btn bt2 btn-default" title="Большой">A</button>
+                    <button class="btn bt3 btn-default" title="Обычный">A</button>
+                </div>
+                <div class="col-md-3">
+                    <label for="">Расстояние</label><br>
+                    <button class="btn bt4 btn-default" title="Очень большой">AБВ</button>
+                    <button class="btn bt5 btn-default" title="Большой">AБВ</button>
+                    <button class="btn bt6 btn-default" title="Обычный">AБВ</button>
+                </div>
+                <div class="col-md-3">
+                    <label for="">Изображения</label><br>
+                    <button class="btn bt7 btn-default" title="Ч/Б">Ч/Б</button>
+                    <button class="btn bt8 btn-default" title="Цветные">Цветные</button>
+                    <button class="btn bt9 btn-default" title="Скрыть">Скрыть</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn bt10 btn-default" title="Обычная версия">Обычная версия</button>
+                    <button class="btn bt11 btn-default" title="Закрыть окно">Закрыть окно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.bt1').click(function(){
+        $('p, span, a').css('font-size', '18px');
+        $('#header .nav li a').css('font-size', '19px');
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "size3=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt2').click(function(){
+        $('p, span, a').css('font-size', '17px');
+        $('#header .nav li a').css('font-size', '18.5px');
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "size2=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt3').click(function(){
+        $('p, span, a').css('font-size', 'inherit');
+        $('#header .nav li a').css('font-size', '18px');
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "size1=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt4').click(function(){
+        $('*').css('letter-spacing', '2px');
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "letter3=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt5').click(function(){
+        $('*').css('letter-spacing', '1px');
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "letter2=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt6').click(function(){
+        $('*').css('letter-spacing', 'auto');
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "letter1=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt7').click(function(){
+        $('.lovz-main').append('<style id="erastyle">body.page{background: linear-gradient(-45deg, #ffffff 0%, #8c8b8b 90%, #616161 100%);}img,.s_tile_offer a .img,.s_tile_offer a .title{filter: grayscale(100%); visibility: visible; } #chat-24-widget-container,#sidebar .sdb_bank_menu a, #video_bg{filter: grayscale(100%);} .main-slider .item{ filter: grayscale(100%); visibility: visible; } h1,h2,h3,h4,h5,h6,#news_box a,#news_box a span,.course_table tbody tr td, #sidebar .sdb_menu li a,#content .breadcrumb li a,#sidebar .sdb_bank_menu a,#content a{color: #616161 !important;} #sidebar .sdb_menu{background-color: #ddd!important;} body.page #header_wrapper.fixed_page{ background: rgba(127, 127, 127, 0.9)!important; } #slider .bg_helper, #slider-2 .bg_helper, #slider-3 .bg_helper, #slider-4 .bg_helper, #slider-5 .bg_helper, #slider-6 .bg_helper {background-color: #616161}</style>');
+        $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "gray=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt8').click(function(){
+        $('#erastyle').remove();
+         $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "color=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt9').click(function(){
+        $('img').css({'visibility': 'hidden'});
+        $('.main-slider .item').css({'visibility': 'hidden'});
+        $('.eye').css({'visibility': 'visibility: visible !important'});
+        $('.lang_box img').css({'visibility': 'visibility: visible !important'});
+        $('#right-fixed img').css({'visibility': 'visibility: visible !important'});
+        $('.social_link img').css({'visibility': 'visibility: visible !important'});
+        $('.dropdown-menu.contacts img').css({'visibility': 'visibility: visible !important'});
+        $('#carousel_slider img').css({'visibility': 'visibility: visible !important'});
+          $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "ehide=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+    $('.bt10').click(function(){
+        $('#erastyle').remove();
+        $('p, span, a').css('font-size', 'auto');
+        $('#header .nav li a').css('font-size', '18px');
+        $('*').css('letter-spacing', 'auto');
+        $('img').css({'visibility': 'visible'});
+        $('.main-slider .item').css({'visibility': 'visible'});
+        $.ajax({
+          type: "POST",
+          url: "/index.php",
+          data: "default=1",
+          dataType: "html",
+          success: function(data){
+            // console.log(data);
+          }
+        });
+    });
+     $('.bt11').click(function(){
+        $('.lovz-main').slideUp();
+    });
+</script>
+<div class="visible-xs">
+    <div id="mobile_menu">
+        <div class="search_box">
+                        <form method="post" class="form-search" action="/ru/search">
+            <input type="hidden" name="sf_method" value="put"/>
+            <input type="hidden" name="_csrf_token" value="5945f10fda49f41b1133c9143c515835" id="csrf_token" />            <div class="srch_wrp">
+                <input type="text" name="query" class="input-medium search-query" placeholder="Поиск" id="query" />                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            </form>
+        </div>
+        <ul class="list-unstyled">
+            <li><a href="/ru/">Главная</a></li>
+            <li><a href="/ru/business">Юридическим лицам</a></li>
+            <li><a href="/ru/retail">Физическим лицам</a></li>
+            <li><a href="/ru/about/">О Банке</a></li>
+            <li><a href="https://i-banking.bankasia.kg">Интернет-банкинг</a></li>
+            <li class="divider"></li>
+                            <li><a href="/ru/feedback">Написать нам</a></li>
+                            <li><a href="/ru/about/schedule/">Графики приема клиентов</a></li>
+                            <li><a href="/ru/map/branch">Филиальная сеть</a></li>
+                            <li><a href="/ru/career/jobs">Вакансии</a></li>
+                            <li><a href="/ru/map/atm">Карта банкоматов</a></li>
+                            <li><a href="/ru/call-center">Call-центр</a></li>
+                            <li><a href="/ru/map/pos">Карта POS терминалов</a></li>
+                            <li><a href="/ru/news">Новости</a></li>
+                            <li><a href="/ru/press-center">Пресс-центр</a></li>
+                            <li><a href="/ru/purchase">Закупки</a></li>
+                        <li><a href="/ru/faq">Вопросы и ответы</a></li>
+
+        </ul>
+        <div id="m_menu_contacts">
+            <p><strong>Адрес: </strong>720016, Кыргызская Республика, г. Бишкек, проспект Мира, 303, СЭЗ «Бишкек»</p>
+            <p><strong>Телефон: </strong><div class="phone_box">
+                        <span class="t1"><a href="tel:+996312910707">+996 (312) 91-07-07</a></span>
+                        <span class="t2"><a href="tel:+996559967707">+996 (559) 96-77-07</a></span>
+                        <span class="t3"><a href="tel:+996777967707">+996 (777) 96-77-07</a></span>
+                        <span class="t4"><a href="tel:+996706967707">+996 (706) 96-77-07</a></span>
+                    </div></p>
+            <div class="social_main_footer">
+                <a href="https://facebook.com/bankasia.kg" class="social_link"><img src="/assets/img/fb_footer.svg" alt="Facebook" width="30" height="30"></a>
+                <a href="http://instagram.com/bankasia.kg" class="social_link"><img src="/assets/img/in_footer_page.png" alt="Twitter" width="30" height="30"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="header_wrapper">
+    <div class="container hidden-xs" id="header">
+        <div class="row">
+            <div class="col-sm-2 col-md-3">
+                <a href="/ru/" id="header_logo">
+                                        <img src="/assets/img/logo.png" alt="logo" class="img-responsive"/>
+                                    </a>
+            </div>
+            <div class="col-sm-8 col-xs-12 col-md-9">
+                <div id="top" class="hidden-sm">
+                    
+                    <div class="call-centr">
+                        <a href="/ru/call-center"><span>Call-центр</span></a>
+                    </div>
+                    
+                    <div class="search_box">
+                                                <form method="post" class="form-search" action="/ru/search">
+                        <input type="hidden" name="sf_method" value="put"/>
+                        <input type="hidden" name="_csrf_token" value="5945f10fda49f41b1133c9143c515835" id="csrf_token" />                        <div class="srch_wrp">
+                            <input type="text" name="query" class="input-medium search-query" placeholder="Поиск" id="query" />                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="map_box">
+                        <a href="/ru/faq"><span>Вопросы и ответы</span></a>
+                         <div class="lang_box">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="/kg/"><img src="/assets/img/kg_big.png" alt="kg" class="img-responsive"/></a></li>
+                            <li><a href="/ru/"><img src="/assets/img/ru_big.png" alt="ru" class="img-responsive"/></a></li>
+                            <li><a href="/en/"><img src="/assets/img/en_big.png" alt="eng" class="img-responsive"/></a></li>
+                        </ul>
+                        </div>
+                        <img src="/assets/img/eye.png" alt="Для слабовидящих" title="Для слабовидящих" class="eye">
+                    </div>
+                    
+                    <div class="phone_box">
+                        <span class="t1"><a href="tel:+996312910707">+996 (312) 91-07-07</a></span>&nbsp;
+                        <span class="t2"><a href="tel:+996559967707">+996 (559) 96-77-07</a></span><br>
+                        <span class="t3"><a href="tel:+996777967707">+996 (777) 96-77-07</a></span>&nbsp;
+                        <span class="t4"><a href="tel:+996706967707">+996 (706) 96-77-07</a></span>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-xs-12">
+                
+
+
+
+
+<nav class="navbar navbar-default" role="navigation" id="menu">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px;">
+        <ul class="nav nav-justified">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Физическим лицам<b
+                        class="caret"></b></a>
+                <ul class="dropdown-menu retail"><li><a href="/ru/retail/deposit" title="Вклады">Вклады</a></li><li><a href="/ru/retail/loan" title="Кредиты">Кредиты</a></li><li><a href="/ru/retail/cash-service" title="Расчётно-кассовое обслуживание">Расчётно-кассовое обслуживание</a></li><li><a href="/ru/retail/cards/" title="Платежные карты">Платежные карты</a></li><li><a href="/ru/retail/cash-service/i-banking/" title="Интернет-банкинг">Интернет-банкинг</a></li><li><a href="/ru/retail/cash-service/cash-operations" title="Конвертация">Конвертация</a></li><li><a href="/ru/retail/cash-service/money-transfer" title="Денежные переводы">Денежные переводы</a></li><li><a href="/ru/retail/clams/" title="Аренда сейфовых ячеек">Аренда сейфовых ячеек</a></li><li><a href="/ru/retail/cash-service/rates" title="Тарифы">Тарифы</a></li></ul>            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Юридическим лицам<b
+                        class="caret"></b></a>
+                <ul class="dropdown-menu business"><li><a href="/ru/business/deposit" title="Вклады">Вклады</a></li><li><a href="/ru/business/loan" title="Кредиты">Кредиты</a></li><li><a href="/ru/business/cash-service-business" title="Расчётно-кассовое обслуживание">Расчётно-кассовое обслуживание</a></li><li><a href="/ru/business/cards" title="Платежные карты">Платежные карты</a></li><li><a href="/ru/business/cash-service-business/i-banking" title="Интернет-банкинг">Интернет-банкинг</a></li><li><a href="/ru/business/cash-service-business/cash-operations-business" title="Конвертация">Конвертация</a></li><li><a href="/ru/business/cash-service-business/money-transfer" title="Денежные переводы">Денежные переводы</a></li><li><a href="/ru/business/clams" title="Аренда сейфовых ячеек">Аренда сейфовых ячеек</a></li><li><a href="/ru/business/cash-service-business/letter-of-credit" title="Аккредитивы">Аккредитивы</a></li><li><a href="/ru/business/bank-guarantees-business" title="Банковские гарантии">Банковские гарантии</a></li><li><a href="/ru/business/salary-project" title="Зарплатные проекты">Зарплатные проекты</a></li><li><a href="/ru/business/cash-service-business/rates-business" title="Тарифы">Тарифы</a></li></ul>            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">О банке<b
+                        class="caret"></b></a>
+                <ul class="dropdown-menu about"><li><a href="/ru/about/official" title="Официальные сведения">Официальные сведения</a></li><li><a href="/ru/about/mission" title="Миссия и ценности">Миссия и ценности</a></li><li><a href="/ru/about/board" title="Совет директоров">Совет директоров</a></li><li><a href="/ru/about/appeal" title="Обращение председателя">Обращение председателя</a></li><li><a href="/ru/about/head" title="Руководство банка">Руководство банка</a></li><li><a href="/ru/about/social" title="Социальная ответственность">Социальная ответственность</a></li><li><a href="/ru/news" title="Новости">Новости</a></li><li><a href="/ru/career" title="Вакансии">Вакансии</a></li><li><a href="/ru/about/partners" title="Партнеры">Партнеры</a></li><li><a href="/ru/about/compliance" title="Комплаенс">Комплаенс</a></li><li><a href="/ru/about/reports" title="Финансовые показатели">Финансовые показатели</a></li><li><a href="/ru/purchase" title="Закупки">Закупки</a></li></ul>            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Отделения и банкоматы<b
+                        class="caret"></b></a>
+                <ul class="dropdown-menu branch and atms"><li><a href="/ru/map/branch" title="Филиальная сеть">Филиальная сеть</a></li><li><a href="/ru/map/atm" title="Карта банкоматов">Карта банкоматов</a></li><li><a href="/ru/map/pos" title="Карта POS терминалов">Карта POS терминалов</a></li></ul>            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Контакты<b
+                        class="caret"></b></a>
+                <ul class="dropdown-menu contacts"><li><a href="/ru/feedback" title="Написать нам">Написать нам</a></li><li><a href="/ru/about/schedule/" title="Графики приема клиентов">Графики приема клиентов</a></li><li><a href="/ru/call-center" title="Call-центр">Call-центр</a></li><li><a href="/ru/press-center" title="Пресс-центр">Пресс-центр</a></li></ul>            </li>
+            <li><a href="https://i-banking.bankasia.kg/">Интернет-банкинг</a></li>
+
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header_line_helper"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/javascripts/jquery-ui.js"></script>
+<div class="container visible-xs" id="mobile_header">
+
+    <div class="row">
+        <div class="col-xs-5">
+            <a href="/ru/" id="header_logo">
+                <img src="/assets/img/logo.png" alt="logo" class="img-responsive"/>
+            </a>
+        </div>
+        <div class="col-xs-5">
+            <div class="lang_box">
+                <ul class="list-unstyled list-inline">
+                    <li><a href="/kg/"><img src="/assets/img/kg.png" alt="Кыргызча" class="img-responsive"/></a></li>
+                    <li><a href="/ru/"><img src="/assets/img/ru.png" alt="Русский" class="img-responsive"/></a></li>
+                    <li><a href="/en/"><img src="/assets/img/eng.png" alt="English" class="img-responsive"/></a></li>
+                </ul>
+            </div>
+            <img src="/assets/img/eye.png" alt="Для слабовидящих" title="Для слабовидящих" class="eye2">
+        </div>
+        <div class="col-xs-2">
+            <button type="button" class="navbar-toggle" id="m_menu_btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+ <script>
+    $('.eye').click( function(){
+        $('.lovz-main').slideDown();
+    });
+    $('.eye2').click( function(){
+        $('.lovz-main').slideDown();
+    });
+                            var lang = $('head meta[name="language"]').attr('content');
+                            var loc = document.location.href;
+                                loc = loc.replace('https://www.bankasia.kg', '');
+                            
+                            // console.log(lang);
+                            if (lang == 'ru'){ 
+                                $('.call-centr a').attr('href', '/ru/call-center'); $('.call-centr span').text('Call-центр');
+                                var lkg = loc.replace('ru','kg');
+                                var len = loc.replace('ru','en');
+                              if(loc != '/'){
+                                 $('.lang_box ul li:nth-child(1) a').attr('href', lkg);
+                                 $('.lang_box ul li:nth-child(2) a').attr('href', loc);
+                                 $('.lang_box ul li:nth-child(3) a').attr('href', len);
+                              }else{
+                                 $('.lang_box ul li:nth-child(1) a').attr('href', '/kg/');
+                                 $('.lang_box ul li:nth-child(2) a').attr('href', '/ru/');
+                                 $('.lang_box ul li:nth-child(3) a').attr('href', '/en/');
+                              }
+                                 
+                            }
+                            else if (lang == 'kg'){ $('.call-centr a').attr('href', '/kg/call-center'); $('.call-centr span').html('Маалымат<br>борбору'); $('.call-centr span, .call-centr a').css('margin-top','0'); 
+                                
+                                var lru = loc.replace('kg','ru');
+                                var len = loc.replace('kg','en');
+                              if(loc != '/'){
+                                 $('.lang_box ul li:nth-child(1) a').attr('href', loc);
+                                 $('.lang_box ul li:nth-child(2) a').attr('href', lru);
+                                 $('.lang_box ul li:nth-child(3) a').attr('href', len);
+                              }else{
+                                 $('.lang_box ul li:nth-child(1) a').attr('href', '/kg/');
+                                 $('.lang_box ul li:nth-child(2) a').attr('href', '/ru/');
+                                 $('.lang_box ul li:nth-child(3) a').attr('href', '/en/');
+                              }
+                            }
+                            else if (lang == 'en'){ $('.call-centr a').attr('href', '/en/call-center'); $('.call-centr span').text('Call-center');
+                                var lkg = loc.replace('en','kg');
+                                var lru = loc.replace('en','ru');
+                               if(loc != '/'){
+                                 $('.lang_box ul li:nth-child(1) a').attr('href', lkg);
+                                 $('.lang_box ul li:nth-child(2) a').attr('href', lru);
+                                 $('.lang_box ul li:nth-child(3) a').attr('href', loc);
+                               }else{
+                                 $('.lang_box ul li:nth-child(1) a').attr('href', '/kg/');
+                                 $('.lang_box ul li:nth-child(2) a').attr('href', '/ru/');
+                                 $('.lang_box ul li:nth-child(3) a').attr('href', '/en/');  
+                               }
+                            }
+                        </script>
+                        
+
+
+        
+
+<div class="main_bg_helper_bottom hidden-xs"></div>
+<div class="main_bg_helper_top hidden-xs"></div>
+
+<div class="wrapper">
+
+    <div id="global">
+<section id="zero_block" class="scroll_block">
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide main-slider" data-ride="carousel">
+ 
+              <div class="carousel-inner" role="listbox">
+                  
+                         <div class="item active" style="background-image: url('/uploads/banner/b17ca8c73282a76f114e0beb50f60eec4f66a88a.png'); min-height: 330px;">
+              <!--  <a href="/ru/" class="mfl-btn">Физическим лицам</a>
+               <a href="/ru/" class="mur-btn">Юридическим лицам</a> -->
+             </div>
+                          <div class="item " style="background-image: url('/uploads/banner/539b860f7877975cdcdd33f40e29bfc654e5aa77.png'); min-height: 330px;">
+              <!--  <a href="/ru/" class="mfl-btn">Физическим лицам</a>
+               <a href="/ru/" class="mur-btn">Юридическим лицам</a> -->
+             </div>
+                          <div class="item " style="background-image: url('/uploads/banner/1a4cee62ff44fd7ca76a1c995198c3083fd8b203.png'); min-height: 330px;">
+              <!--  <a href="/ru/" class="mfl-btn">Физическим лицам</a>
+               <a href="/ru/" class="mur-btn">Юридическим лицам</a> -->
+             </div>
+                           </div>
+             <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                    <!--<span class="sr-only">Previous</span>-->
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                    <!--<span class="sr-only">Next</span>-->
+                  </a>
+        </div>
+    </div>
+    <div class="container hidden-xs" id="slider_wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="slider">
+                            <div class="bg_helper"></div>
+                            <div class="row posre">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div id="carousel_slider" class="carousel slide" data-ride="carousel"
+                                         data-interval="false">
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-center">
+                                                        <h2 class="slide_header">Физическим лицам</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+
+                                                                            <div class="col-sm-2">
+            <a href="/ru/retail/deposit" class="single_slide_el">
+                <img src="/uploads/page/91388723956a2b88fc115cf15195b0f92593439c.png" alt="Вклады"
+                     class="img-responsive"/>
+                <span>Вклады</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/retail/loan" class="single_slide_el">
+                <img src="/uploads/page/4c51f45d710ab904c537a0eecb591556280fdc1f.png" alt="Кредиты"
+                     class="img-responsive"/>
+                <span>Кредиты</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/retail/cash-service" class="single_slide_el">
+                <img src="/uploads/page/515f6009f43d28c3e0b5db1d8f9a0ac722130b7e.png" alt="Расчётно-кассовое обслуживание"
+                     class="img-responsive"/>
+                <span>Расчётно-кассовое обслуживание</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/retail/cards" class="single_slide_el">
+                <img src="/uploads/page/018848a3574a52d0a5c324c4eaa6d4787966230f.png" alt="Банковские платёжные карты"
+                     class="img-responsive"/>
+                <span>Банковские платёжные карты</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/retail/cash-service/i-banking" class="single_slide_el">
+                <img src="/uploads/page/06dd6e64e8f4ced417881cc7ed3bad373d339ec9.png" alt="Интернет-банкинг"
+                     class="img-responsive"/>
+                <span>Интернет-банкинг</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/retail/cash-service/cash-operations" class="single_slide_el">
+                <img src="/uploads/page/c8d51caaa71e537b6e648a6eef726efd2f0211b2.png" alt="Обменные операции"
+                     class="img-responsive"/>
+                <span>Обменные операции</span>
+            </a>
+        </div>
+                        
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="row">
+                                                        <div class="col-md-12 text-center">
+                                                            <h2 class="slide_header">Юридическим лицам</h2>
+                                                        </div>
+                                                    </div>
+
+                                                                            <div class="col-sm-2">
+            <a href="/ru/business/deposit" class="single_slide_el">
+                <img src="/uploads/page/39d6544b73a8163655042c2f9d171307ebb053ed.png" alt="Вклады"
+                     class="img-responsive"/>
+                <span>Вклады</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/business/loan" class="single_slide_el">
+                <img src="/uploads/page/a9a637022cd485795841b83fe334ee990b02c784.png" alt="Кредиты"
+                     class="img-responsive"/>
+                <span>Кредиты</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/business/cash-service-business" class="single_slide_el">
+                <img src="/uploads/page/9c6d92fcacf4267f3fa252b38535f0a4e3b3f044.png" alt="Расчётно-кассовое обслуживание"
+                     class="img-responsive"/>
+                <span>Расчётно-кассовое обслуживание</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/business/cards" class="single_slide_el">
+                <img src="/uploads/page/" alt="Банковские платёжные карты"
+                     class="img-responsive"/>
+                <span>Банковские платёжные карты</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/business/cash-service-business/i-banking" class="single_slide_el">
+                <img src="/uploads/page/c4edab3c2e158d65205f3269be03d75cfe6737b0.png" alt="Интернет-банкинг"
+                     class="img-responsive"/>
+                <span>Интернет-банкинг</span>
+            </a>
+        </div>
+                                    <div class="col-sm-2">
+            <a href="/ru/business/cash-service-business/cash-operations-business" class="single_slide_el">
+                <img src="/uploads/page/202887782af80c9c5caec4a48cba7ae61e8ac6b2.png" alt="Обменные операции"
+                     class="img-responsive"/>
+                <span>Обменные операции</span>
+            </a>
+        </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <a class="left carousel-control" href="#carousel_slider" data-slide="prev">
+
+                                </a>
+                                <a class="right carousel-control" href="#carousel_slider" data-slide="next">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<section id="second_block" class="scroll_block">
+            <div id="news_wrapper">
+                <div class="container" id="news">
+                    <div class="row">
+                        <div class="col-md-4 course_box">
+                            <h3>Курсы валют</h3>
+
+                            <ul class="nav nav-tabs nav-justified" id="main_tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">Наличные</a></li>
+                                <li><a href="#profile" data-toggle="tab"><span>Безналичные</span></a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content" id="main_course_tabs">
+                                <div class="bg_helper"></div>
+                                                                
+                                <div class="tab-pane fade in active" id="home">
+                                    <table class="course_table table">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Покупка</th>
+                                            <th>Продажа</th>
+                                            <th>НБКР (06.06)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>USD</td>
+                                            <td>73.7000</td>
+                                            <td>74.4000</td>
+                                            <td>74.2343</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EUR</td>
+                                            <td>82.5000</td>
+                                            <td>85.0000</td>
+                                            <td>84.1186</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RUB</td>
+                                            <td>1.0750</td>
+                                            <td>1.0950</td>
+                                            <td>1.0816</td>
+                                        </tr>
+                                        <tr>
+                                            <td>KZT</td>
+                                            <td>0.1600</td>
+                                            <td>0.1900</td>
+                                            <td>0.1857</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="date">Курсы валют на                                                                                    5 июня 2020                                            года                                                                            </p>
+                                </div>
+                                <div class="tab-pane" id="profile">
+                                    <table class="course_table table">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Покупка</th>
+                                            <th>Продажа</th>
+                                            <th>НБКР (06.06)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>USD</td>
+                                            <td>73.7000</td>
+                                            <td>74.4000</td>
+                                            <td>74.2343</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EUR</td>
+                                            <td>82.5000</td>
+                                            <td>85.0000</td>
+                                            <td>84.1186</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RUB</td>
+                                            <td>1.0730</td>
+                                            <td>1.0980</td>
+                                            <td>1.0816</td>
+                                        </tr>
+                                        <tr>
+                                            <td>KZT</td>
+                                            <td>0.1590</td>
+                                            <td>0.1930</td>
+                                            <td>0.1857</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="date">Курсы валют на                                                                                    5 июня 2020                                            года                                                                            </p>
+                                </div>
+                                                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="news_box">
+                                <h3>Новости банка</h3>
+                                <ul class="list-unstyled">
+                                                                                                                                                    <li>
+                                            <a href="/ru/news/368" class="single_news">
+                                                <span class="date">5 июня 2020</span>
+                                                <span class="news_title">График работы отделений банка на 5 июня</span>
+                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                            <a href="/ru/news/367" class="single_news">
+                                                <span class="date">4 июня 2020</span>
+                                                <span class="news_title">График работы отделений банка на 4 июня</span>
+                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                            <a href="/ru/news/366" class="single_news">
+                                                <span class="date">3 июня 2020</span>
+                                                <span class="news_title">График работы отделений банка на 3 июня</span>
+                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                            <a href="/ru/news/365" class="single_news">
+                                                <span class="date">2 июня 2020</span>
+                                                <span class="news_title">График работы филиалов и сберегательных касс на 2 июня</span>
+                                            </a>
+                                        </li>
+                                                                        </ul>
+                                <a href="/ru/news" class="all_news">Все новости</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm">
+                           
+                           <div id="news_box">
+                                <h3>Блог</h3>
+                                <ul class="list-unstyled">
+                                                                                                                                            </ul>
+                                <a href="/ru/blog" class="all_news">Все блоги</a>
+                            </div>
+
+                            <!-- 
+                            <div id="banner_box">
+                               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                             
+                                  <div class="carousel-inner" role="listbox">
+                                      
+                                                                     </div>
+                                
+                                </div>
+                                                       
+                                                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="third_block" class="scroll_block">
+    <div class="container-fluid" id="footer_main">
+    <div class="row">
+        <div class="footer_main_wrapper">
+            <div class="bg_helper hidedn-xs"></div>
+            <div class="container">
+                <div class="row hidden-xs" id="home_menu_bottom">
+                   <!-- <div class="col-sm-3">
+                        <h4>О банке</h4>
+                        <ul class="list-unstyled single_footer_menu about"><li><a href="/ru/about/official" title="Официальные сведения">Официальные сведения</a></li><li><a href="/ru/about/mission" title="Миссия и ценности">Миссия и ценности</a></li><li><a href="/ru/about/board" title="Совет директоров">Совет директоров</a></li><li><a href="/ru/about/appeal" title="Обращение председателя">Обращение председателя</a></li><li><a href="/ru/about/head" title="Руководство банка">Руководство банка</a></li><li><a href="/ru/about/social" title="Социальная ответственность">Социальная ответственность</a></li><li><a href="/ru/news" title="Новости">Новости</a></li><li><a href="/ru/career" title="Вакансии">Вакансии</a></li><li><a href="/ru/about/partners" title="Партнеры">Партнеры</a></li><li><a href="/ru/about/compliance" title="Комплаенс">Комплаенс</a></li><li><a href="/ru/about/reports" title="Финансовые показатели">Финансовые показатели</a></li><li><a href="/ru/purchase" title="Закупки">Закупки</a></li></ul>                    </div>
+                    <div class="col-sm-3">
+                        <h4>Физическим лицам</h4>
+                        <ul class="list-unstyled single_footer_menu retail"><li><a href="/ru/retail/deposit" title="Вклады">Вклады</a></li><li><a href="/ru/retail/loan" title="Кредиты">Кредиты</a></li><li><a href="/ru/retail/cash-service" title="Расчётно-кассовое обслуживание">Расчётно-кассовое обслуживание</a></li><li><a href="/ru/retail/cards/" title="Платежные карты">Платежные карты</a></li><li><a href="/ru/retail/cash-service/i-banking/" title="Интернет-банкинг">Интернет-банкинг</a></li><li><a href="/ru/retail/cash-service/cash-operations" title="Конвертация">Конвертация</a></li><li><a href="/ru/retail/cash-service/money-transfer" title="Денежные переводы">Денежные переводы</a></li><li><a href="/ru/retail/clams/" title="Аренда сейфовых ячеек">Аренда сейфовых ячеек</a></li><li><a href="/ru/retail/cash-service/rates" title="Тарифы">Тарифы</a></li></ul>                    </div>
+                    <div class="col-sm-3">
+                        <h4>Юридическим лицам</h4>
+                        <ul class="list-unstyled single_footer_menu business"><li><a href="/ru/business/deposit" title="Вклады">Вклады</a></li><li><a href="/ru/business/loan" title="Кредиты">Кредиты</a></li><li><a href="/ru/business/cash-service-business" title="Расчётно-кассовое обслуживание">Расчётно-кассовое обслуживание</a></li><li><a href="/ru/business/cards" title="Платежные карты">Платежные карты</a></li><li><a href="/ru/business/cash-service-business/i-banking" title="Интернет-банкинг">Интернет-банкинг</a></li><li><a href="/ru/business/cash-service-business/cash-operations-business" title="Конвертация">Конвертация</a></li><li><a href="/ru/business/cash-service-business/money-transfer" title="Денежные переводы">Денежные переводы</a></li><li><a href="/ru/business/clams" title="Аренда сейфовых ячеек">Аренда сейфовых ячеек</a></li><li><a href="/ru/business/cash-service-business/letter-of-credit" title="Аккредитивы">Аккредитивы</a></li><li><a href="/ru/business/bank-guarantees-business" title="Банковские гарантии">Банковские гарантии</a></li><li><a href="/ru/business/salary-project" title="Зарплатные проекты">Зарплатные проекты</a></li><li><a href="/ru/business/cash-service-business/rates-business" title="Тарифы">Тарифы</a></li></ul>                    </div>-->
+                     <div class="col-sm-4">
+                        <div id="contacts_footer">
+                                                             <a href="/ru/" class="logo_footer_page">
+                                                                                <img src="/assets/img/logo_white.png" alt="logo" class="img-responsive"/>
+                                                                            </a>
+                            <div class="footer_adress">
+                        
+                                <p>720016, Кыргызская Республика,</p>
+                                <p>г. Бишкек, пр. Ч. Айтматова, 303</p>
+                                <p>(СЭЗ «Бишкек»)</p>
+                                
+                            </div>
+                                <p>Тел.: +996 (312) 55-00-01</p>
+                                <p>Факс: +996 (312) 55-01-82</p>
+                                <p>E-mail: <a href="mailto:bankasia@bankasia.kg">bankasia@bankasia.kg</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="fsc">
+                       <div>
+            <img src="/assets/img/main_text-ru.png" alt="Ваши шаги - Наша поддержка" class="img-responsive hidden-sm">
+                    </div>
+                        <br>
+                        <div class="call-centr">
+                            <a href="/ru/call-center" ><h4 style="color: #fff;">Call-центр</h4></a>                        </div>
+                        <br><br>
+                        <div class="phone_box">
+                        
+                        <span class="t1"><a href="tel:+996312910707">+996 (312) 91-07-07</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="t2"><a href="tel:+996559967707">+996 (559) 96-77-07</a></span><br>
+                        <span class="t3"><a href="tel:+996777967707">+996 (777) 96-77-07</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="t4"><a href="tel:+996706967707">+996 (706) 96-77-07</a></span>
+                        </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <br>
+                        <h4 style="color: #fff;">Мы в соцсетях</h4>
+                        <!--<ul class="list-unstyled single_footer_menu contacts"><li><a href="/ru/feedback" title="Написать нам">Написать нам</a></li><li><a href="/ru/about/schedule/" title="Графики приема клиентов">Графики приема клиентов</a></li><li><a href="/ru/call-center" title="Call-центр">Call-центр</a></li><li><a href="/ru/press-center" title="Пресс-центр">Пресс-центр</a></li></ul>-->
+                        <br>
+                        <div class="social_main_footer">
+                            <a href="https://facebook.com/bankasia.kg" class="social_link"><img src="/assets/img/fb_footer_page.png" alt="fb"/></a>
+                            <a href="https://instagram.com/bankasia.kg" class="social_link"><img src="/assets/img/in_footer_page.png" alt="instagram"></a>
+                        </div>
+                        <p class="store">
+                            <a href="https://play.google.com/store/apps/details?id=kg.bankasia.android"><img src="/assets/img/android.png"  class="android" alt="android"/></a><br><br>
+                            <a href="https://itunes.apple.com/ru/app/bank-azii/id1181735019?mt=8"><img src="/assets/img/appstore.png" alt="ios"/></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-11">
+                        <div class="line_helper  bottom_footer hidden-xs"></div>
+                        <a href="#" class="footer_main_logo hidden-xs"><img src="/assets/img/logo_footer_main.png" alt="logo" class="img-responsive"/></a>
+                        <p class="copyright">© ЗАО «Банк Азии», 2020. Лицензия НБКР №042 от 22 июня 2017 года</p>
+                        <a href="http://michaelageev.com" class="ma" title="Разработка сайтов в Кыргызстане"><img src="/assets/img/ma.svg" alt="Разработка сайтов и мобильных приложений"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#menu .contacts li:nth-child(3) > a').css('display', 'inline');
+    $('#menu .contacts li:nth-child(3)').append('<div style="display: inline; padding-left: 15px;"><a href="https://facebook.com/bankasia.kg" style="padding-right: 10px;"><img src="/assets/img/fb_footer_page.png" alt="fb"></a><a href="https://instagram.com/bankasia.kg" class=""><img src="/assets/img/in_footer_page.png" alt="instagram"></a></div>');
+    
+</script>
+<script id='chat-24-widget-code' type="text/javascript">
+  !function (e) {
+    var t = {};
+    function n(c) { if (t[c]) return t[c].exports; var o = t[c] = {i: c, l: !1, exports: {}}; return e[c].call(o.exports, o, o.exports, n), o.l = !0, o.exports }
+    n.m = e, n.c = t, n.d = function (e, t, c) { n.o(e, t) || Object.defineProperty(e, t, {configurable: !1, enumerable: !0, get: c}) }, n.n = function (e) {
+      var t = e && e.__esModule ? function () { return e.default } : function () { return e  };
+      return n.d(t, "a", t), t
+    }, n.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, n.p = "/packs/", n(n.s = 0)
+  }([function (e, t) {
+    window.chat24WidgetCanRun = 1, window.chat24WidgetCanRun && function () {
+      window.chat24ID = "a73a9985cb219711c97ee121117835d8", window.chat24io_lang = "ru";
+      var e = "https://livechat.chat2desk.com", t = document.createElement("script");
+      t.type = "text/javascript", t.async = !0, fetch(e + "/packs/manifest.json?nocache=" + (new Date()).getTime()).then(function (e) {
+        return e.json()
+      }).then(function (n) {
+        t.src = e + n["widget.js"];
+        var c = document.getElementsByTagName("script")[0];
+        c ? c.parentNode.insertBefore(t, c) : document.documentElement.firstChild.appendChild(t);
+        var o = document.createElement("link");
+        o.href = e + n["widget.css"], o.rel = "stylesheet", o.id = "chat-24-io-stylesheet", o.type = "text/css", document.getElementById("chat-24-io-stylesheet") || document.getElementsByTagName("head")[0].appendChild(o)
+      })
+    }()
+  }]);
+
+</script>
+<script>
+
+    $(document).ready(function(){
+
+        if (window.matchMedia('(min-width: 769px)').matches) {
+            $('li.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(0);
+                $('li.dropdown.open').removeClass('open');
+                $(this).toggleClass('open');
+            }, function() {
+                $('li.dropdown.open').removeClass('open');
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(0);
+            });
+        }
+
+        $th = $('#top').outerHeight(true);
+        $th = $th + 10;
+
+
+
+        if (window.matchMedia('(min-width: 769px)').matches) {
+            $(document).scroll(function() {
+                if ($(document).scrollTop() >= $th) {
+
+                    $('#header_wrapper').addClass('fixed_page');
+                    var $hh = $('#header_wrapper').outerHeight(true);
+                    var $hh = $hh + 90;
+                    $('.custom_container').css('margin-top',$hh);
+
+                } else {
+
+                    $('#header_wrapper').removeClass('fixed_page');
+                    $('.custom_container').css('margin-top',0)
+
+                }
+            });
+        }
+
+
+        $("#m_menu_btn").bind('click', function() {
+            $("#mobile_menu").toggle( "slide", {direction: 'right'}, 300 );
+            $(this).toggleClass('open');
+        });
+
+    });
+
+</script></section>
+        
+    </div>
+    <div id="right-fixed" class="">
+      <!--   <div class="feedcallbtn"><img src="/assets/img/feedback.png" alt="Заказать обратный звонок" title="Заказать обратный звонок" style="width: 100%;"></div> -->
+        <div class="oneclickbtn" style="display: none;"><img src="/assets/img/fixed2.png" alt="Звонок в один клик" title="Звонок в один клик" style="width: 100%;"></div>
+        <div class="feedusbtn" style="display: none;"><img src="/assets/img/fixed3.png" alt="Написать нам" title="Написать нам" style="width: 100%;"></div>
+        <div class="callbtn"><img src="/assets/img/fixed4.png" alt="Главная" title="Колл-центр" style="width: 100%;"></div>
+    </div>
+
+    <div class="emodal1" >
+       <span class="close">X</span>
+       
+   </div>
+   <div class="emodal2" >
+       <span class="close">X</span>
+           <br>
+       <div class="info">
+           <h4>Вы можете позвонить нам, выбрав желаемого оператора связи.</h4>
+           <div class="phone_box">
+               <span class="t1"><a href="tel:+996312910707">+996 (312) 91-07-07</a></span>
+               <span class="t2"><a href="tel:+996559967707">+996 (559) 96-77-07</a></span>
+               <span class="t3"><a href="tel:+996777967707">+996 (777) 96-77-07</a></span>
+               <span class="t4"><a href="tel:+996706967707">+996 (706) 96-77-07</a></span>
+           </div>
+       </div>
+   </div>
+   <div class="emodal3" >
+       <span class="close">X</span>
+       <br>
+       <div class="info">
+           <h5>Пожалуйста, укажите ваши контактные данные для обратной связи. Мы обязательно ответим на ваше обращение.</h5>
+           <br>
+           <a href="/ru/feedback">Подать жалобу</a>
+           <br>
+           <a href="/ru/feedback"">Получить консультацию</a>
+       </div>
+       
+   </div>
+
+    <style>#right-fixed > div:hover{cursor: pointer; background-color: hsla(0,0%,94%,.6); transition: .2s;}
+        #right-fixed {position: fixed; right: 20px; z-index: 11000; bottom: 117px; width: 90px;}
+        #right-fixed > div{box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); border-radius: 5px; padding: 10px; margin-bottom: 10px; }
+        .emodal1, .emodal2, .emodal3{
+            background-color: #fff;
+            display: none;
+            position: fixed;
+            top: 30%;
+            bottom: auto;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 1px solid #7b7b7b;
+            border-radius: 8px;
+            padding: 15px;
+            max-width: 290px;
+            min-height: 200px;
+            z-index: 10111;
+        }
+        .emodal1 .close, .emodal2 .close, .emodal3 .close{
+            font-size: 18px;
+            color: #000;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 15px;
+        }
+        .emodal2 .info .phone_box span a{
+            color: #000;
+            line-height: 2;
+        }
+        .emodal2 .info .phone_box span a:hover{
+            color: blue;
+        }
+        .emodal2 .phone_box .t1 {
+            background: url(/assets/img/24bl.png) left center no-repeat;
+        }
+        .emodal2 .phone_box .t2 {
+            background: url(/assets/img/megabl.png) left center no-repeat;
+        }
+        .emodal2 .phone_box .t3 {
+            background: url(/assets/img/beelinebl.png) left center no-repeat;
+        }
+        .emodal2 .phone_box .t4 {
+            background: url(/assets/img/obl.png) left center no-repeat;
+        }
+    @media (max-width: 768px){
+        #right-fixed {right: 5px; width: 78px; bottom: 90px;}
+        #right-fixed > div{padding: 4px; }
+    }
+   </style>
+   <script type="text/javascript">
+       $('.feedcallbtn').click( function(){
+            $('.emodal1').fadeIn('slow');
+            $('.emodal2').fadeOut('slow');
+            $('.emodal3').fadeOut('slow');
+            setTimeout(function(){
+              $('.emodal1').fadeOut('slow');
+            }, 5000);
+       });
+       $('.emodal1 .close').click( function(){
+            $('.emodal1').fadeOut('slow');
+       });
+
+       $('.oneclickbtn').click( function(){
+            $('.emodal2').fadeIn('slow');
+            $('.emodal1').fadeOut('slow');
+            $('.emodal3').fadeOut('slow');
+            setTimeout(function(){
+              $('.emodal2').fadeOut('slow');
+            }, 5000);
+       });
+       $('.emodal2 .close').click( function(){
+            $('.emodal2').fadeOut('slow');
+       });
+
+       $('.feedusbtn').click( function(){
+            $('.emodal3').fadeIn('slow');
+            $('.emodal1').fadeOut('slow');
+            $('.emodal2').fadeOut('slow');
+            setTimeout(function(){
+              $('.emodal3').fadeOut('slow');
+            }, 5000);
+       });
+       $('.emodal3 .close').click( function(){
+            $('.emodal3').fadeOut('slow');
+       });
+
+       $('.callbtn').click( function(){
+            $('.oneclickbtn').toggle('slow');
+            $('.feedusbtn').toggle('slow');
+       });
+   </script>
+
+</div>
+
+<script src="/assets/javascripts/scroll_init.js"></script>
+<div class="video_helper"></div>
+</body>
+</html>
+
+
+
+
+
