@@ -9,6 +9,7 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 from bs4 import BeautifulSoup
 import telebot
+from datetime import datetime 
 
 
 bot = telebot.TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
@@ -16,15 +17,32 @@ bot = telebot.TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
+    res = 'Привет, я Бот Банк Азии:\n Вот что я умею:\n Показать курс валют - /rate \nПоказать погоду за день - /weath'
+    bot.send_message(message.chat.id, res)
 
-bot.polling()
+
+@bot.message_handler(commands=['rate'])
+def get_valute_message(message):
+    bot.send_message(message.chat.id, 'Загружаю....')
+    res = get_and_parse()
+    bot.send_message(message.chat.id, 'Вот держи:')
+    bot.send_message(message.chat.id, res)
+
+
+@bot.message_handler(commands=['weath'])
+def get_weather_message(message): 
+    bot.send_message(message.chat.id, 'Загружаю....')
+    weath = get_weather()
+    
+    bot.send_message(message.chat.id, weath)
+    
+
 
 
 @api_view(['GET', 'POST'])
 def send_bot_message(request):
     if request.method == 'GET':
-        get_and_parse()
+        
         return Response(data="tests",status=status.HTTP_201_CREATED)
     elif request.method == 'POST':
         data = request.data
@@ -38,8 +56,9 @@ def send_bot_message(request):
         except Exception as ex:
            return Response(data=str(ex), status=status.HTTP_400_BAD_REQUEST)
 
-
+#Получение курс валют с сайта www.bankasia.kg
 def get_and_parse():
+    res = ''
     url='https://www.bankasia.kg/ru/'
     site = requests.get(url)
     site.encoding = 'utf8' 
@@ -56,7 +75,38 @@ def get_and_parse():
        heads.append(str(i).replace('<tr>','').replace('</tr>','').replace('<td>','').replace('</td>','').replace('\n','   '))
        print(k)
     for i in heads:
+        res = res + i + '\n'
         print(i)
+    return res
+
+#Получение прогноза погоды за день
+def get_weather():
+    month = str(datetime.now().month)
+    day = str(datetime.now().day)
+    result= 'Погода за ' +  day  + '.' +  month + ':' +'\n'
+    try:
+        appid = '95ebcec99f4eacbd6d61238bbe51304b'
+        city_id = '1528675'
+        res = requests.get("http://api.openweathermap.org/data/2.5/forecast",
+                           params={'id': city_id, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
+        data = res.json()
+        k=0
+        for i in data['list']:
+            k=k+1
+            temp = ''
+            if i['main']['temp'] < 0:
+                temp = '-'+str(i['main']['temp'])
+            else:
+                 temp = '+'+str(i['main']['temp'])
+            result = result + i['dt_txt'] + ' ' + temp + ' ' + i['weather'][0]['description'] + '\n\n'
+            print(result)
+            if k == 6:
+                break
+    except Exception as e:
+        print("Exception (forecast):", e)
+    return str(result)
+
+bot.polling()
 
    
 

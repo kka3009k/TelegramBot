@@ -25,7 +25,7 @@
     <script type="text/javascript" src="/assets/javascripts/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/javascripts/jquery.onepage-scroll.min.js"></script>
 <script type="text/javascript" src="/assets/javascripts/bootstrap.min.js"></script>
-    <script src="/assets/javascripts/script.js?nocache=1591356499"></script>
+    <script src="/assets/javascripts/script.js?nocache=1591421862"></script>
 
     <!--[if lt IE 9]>
     <script src="/assets/javascripts/html5shiv.min.js"></script>
@@ -320,7 +320,7 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
         <div class="search_box">
                         <form method="post" class="form-search" action="/ru/search">
             <input type="hidden" name="sf_method" value="put"/>
-            <input type="hidden" name="_csrf_token" value="5945f10fda49f41b1133c9143c515835" id="csrf_token" />            <div class="srch_wrp">
+            <input type="hidden" name="_csrf_token" value="8eaa595a631ea14c8aafb60cd634a2ee" id="csrf_token" />            <div class="srch_wrp">
                 <input type="text" name="query" class="input-medium search-query" placeholder="Поиск" id="query" />                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
             </div>
             </form>
@@ -379,7 +379,7 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                     <div class="search_box">
                                                 <form method="post" class="form-search" action="/ru/search">
                         <input type="hidden" name="sf_method" value="put"/>
-                        <input type="hidden" name="_csrf_token" value="5945f10fda49f41b1133c9143c515835" id="csrf_token" />                        <div class="srch_wrp">
+                        <input type="hidden" name="_csrf_token" value="8eaa595a631ea14c8aafb60cd634a2ee" id="csrf_token" />                        <div class="srch_wrp">
                             <input type="text" name="query" class="input-medium search-query" placeholder="Поиск" id="query" />                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                         </div>
                         </form>
@@ -755,14 +755,14 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                                         <tbody>
                                         <tr>
                                             <td>USD</td>
-                                            <td>73.7000</td>
-                                            <td>74.4000</td>
+                                            <td>73.9000</td>
+                                            <td>74.6000</td>
                                             <td>74.2343</td>
                                         </tr>
                                         <tr>
                                             <td>EUR</td>
-                                            <td>82.5000</td>
-                                            <td>85.0000</td>
+                                            <td>82.8000</td>
+                                            <td>84.8000</td>
                                             <td>84.1186</td>
                                         </tr>
                                         <tr>
@@ -779,7 +779,7 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                                         </tr>
                                         </tbody>
                                     </table>
-                                    <p class="date">Курсы валют на                                                                                    5 июня 2020                                            года                                                                            </p>
+                                    <p class="date">Курсы валют на                                                                                    6 июня 2020                                            года                                                                            </p>
                                 </div>
                                 <div class="tab-pane" id="profile">
                                     <table class="course_table table">
@@ -794,31 +794,31 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                                         <tbody>
                                         <tr>
                                             <td>USD</td>
-                                            <td>73.7000</td>
-                                            <td>74.4000</td>
+                                            <td>73.9000</td>
+                                            <td>74.6000</td>
                                             <td>74.2343</td>
                                         </tr>
                                         <tr>
                                             <td>EUR</td>
-                                            <td>82.5000</td>
-                                            <td>85.0000</td>
+                                            <td>82.8000</td>
+                                            <td>85.8000</td>
                                             <td>84.1186</td>
                                         </tr>
                                         <tr>
                                             <td>RUB</td>
-                                            <td>1.0730</td>
-                                            <td>1.0980</td>
+                                            <td>1.0750</td>
+                                            <td>1.0950</td>
                                             <td>1.0816</td>
                                         </tr>
                                         <tr>
                                             <td>KZT</td>
-                                            <td>0.1590</td>
-                                            <td>0.1930</td>
+                                            <td>0.1600</td>
+                                            <td>0.1900</td>
                                             <td>0.1857</td>
                                         </tr>
                                         </tbody>
                                     </table>
-                                    <p class="date">Курсы валют на                                                                                    5 июня 2020                                            года                                                                            </p>
+                                    <p class="date">Курсы валют на                                                                                    6 июня 2020                                            года                                                                            </p>
                                 </div>
                                                             </div>
                         </div>
@@ -827,6 +827,12 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                                 <h3>Новости банка</h3>
                                 <ul class="list-unstyled">
                                                                                                                                                     <li>
+                                            <a href="/ru/news/369" class="single_news">
+                                                <span class="date">5 июня 2020</span>
+                                                <span class="news_title">График работы на 6 июня 2020 года</span>
+                                            </a>
+                                        </li>
+                                                                                                                    <li>
                                             <a href="/ru/news/368" class="single_news">
                                                 <span class="date">5 июня 2020</span>
                                                 <span class="news_title">График работы отделений банка на 5 июня</span>
@@ -842,12 +848,6 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                                             <a href="/ru/news/366" class="single_news">
                                                 <span class="date">3 июня 2020</span>
                                                 <span class="news_title">График работы отделений банка на 3 июня</span>
-                                            </a>
-                                        </li>
-                                                                                                                    <li>
-                                            <a href="/ru/news/365" class="single_news">
-                                                <span class="date">2 июня 2020</span>
-                                                <span class="news_title">График работы филиалов и сберегательных касс на 2 июня</span>
                                             </a>
                                         </li>
                                                                         </ul>
