@@ -8,17 +8,17 @@ from rest_framework.response import *
 from rest_framework.decorators import api_view
 from rest_framework import status
 from bs4 import BeautifulSoup
-#import telebot
+import telebot
 
 
-#bot = telebot.TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
+bot = telebot.TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
 
 
-#@bot.message_handler(commands=['start'])
-#def start_message(message):
-#    bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
 
-#bot.polling()
+bot.polling()
 
 
 @api_view(['GET', 'POST'])
