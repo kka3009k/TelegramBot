@@ -25,7 +25,7 @@
     <script type="text/javascript" src="/assets/javascripts/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/javascripts/jquery.onepage-scroll.min.js"></script>
 <script type="text/javascript" src="/assets/javascripts/bootstrap.min.js"></script>
-    <script src="/assets/javascripts/script.js?nocache=1591421862"></script>
+    <script src="/assets/javascripts/script.js?nocache=1591425241"></script>
 
     <!--[if lt IE 9]>
     <script src="/assets/javascripts/html5shiv.min.js"></script>
@@ -320,7 +320,7 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
         <div class="search_box">
                         <form method="post" class="form-search" action="/ru/search">
             <input type="hidden" name="sf_method" value="put"/>
-            <input type="hidden" name="_csrf_token" value="8eaa595a631ea14c8aafb60cd634a2ee" id="csrf_token" />            <div class="srch_wrp">
+            <input type="hidden" name="_csrf_token" value="2c61b5aedf049c07e1400a6e468a6034" id="csrf_token" />            <div class="srch_wrp">
                 <input type="text" name="query" class="input-medium search-query" placeholder="Поиск" id="query" />                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
             </div>
             </form>
@@ -379,7 +379,7 @@ src="https://www.facebook.com/tr?id=608655669487664&ev=PageView&noscript=1"/>
                     <div class="search_box">
                                                 <form method="post" class="form-search" action="/ru/search">
                         <input type="hidden" name="sf_method" value="put"/>
-                        <input type="hidden" name="_csrf_token" value="8eaa595a631ea14c8aafb60cd634a2ee" id="csrf_token" />                        <div class="srch_wrp">
+                        <input type="hidden" name="_csrf_token" value="2c61b5aedf049c07e1400a6e468a6034" id="csrf_token" />                        <div class="srch_wrp">
                             <input type="text" name="query" class="input-medium search-query" placeholder="Поиск" id="query" />                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                         </div>
                         </form>

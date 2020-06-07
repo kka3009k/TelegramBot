@@ -38,6 +38,9 @@
     <Compile Include="manage.py" />
     <Compile Include="TeleBot\core\admin.py" />
     <Compile Include="TeleBot\core\apps.py" />
+    <Compile Include="TeleBot\core\bot.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TeleBot\core\migrations\__init__.py" />
     <Compile Include="TeleBot\core\models.py" />
     <Compile Include="TeleBot\core\tests.py" />
