@@ -17,7 +17,9 @@ bot = telebot.TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     res = 'Привет {0}, я Бот Банк Азии:\nВот что я умею:\nПоказать курс валют - /rate \nПоказать погоду за день - /weath'.format(message.chat.first_name)
-    bot.send_message(message.chat.id, res)
+    row = []
+    row.append('A')
+    bot.send_message(message.chat.id, res,reply_markup=get_mark_keyboard(row,True))
 
 
 @bot.message_handler(commands=['rate'])
@@ -34,6 +36,15 @@ def get_weather_message(message):
     weath = get_weather()
     
     bot.send_message(message.chat.id, weath)
+
+
+@bot.message_handler(content_types=['text'])
+def get_keyboard_message(message):
+    a=''
+    #Логика
+        
+        
+    
     
 
 

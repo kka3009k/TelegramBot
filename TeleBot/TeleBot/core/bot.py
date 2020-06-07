@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime 
 import json
 import requests
-
+from telebot.types import *
 
 #Получение курс валют с сайта www.bankasia.kg
 def get_and_parse():
@@ -48,3 +48,12 @@ def get_weather():
     except Exception as e:
         print("Exception (forecast):", e)
     return str(result)
+
+
+#Возращает keyboard
+def get_mark_keyboard(rows: str, vis: bool):
+    keyboard = ReplyKeyboardMarkup(True,vis)
+    for i in rows:
+        keyboard.add(i)
+    return keyboard
+
