@@ -5,8 +5,7 @@
     <Name>TeleBot</Name>
     <RootNamespace>TeleBot</RootNamespace>
     <WebBrowserPort>1204</WebBrowserPort>
-    <InterpreterId>{8de35c41-9fd6-4cf4-b836-6b6b491c77fd}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>MSBuild|myenv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -20,6 +19,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Django launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -111,7 +111,6 @@
   <ItemGroup>
     <Interpreter Include="..\..\envs\">
       <Id>{8de35c41-9fd6-4cf4-b836-6b6b491c77fd}</Id>
-      <BaseInterpreter>{3a2b1101-1c2f-4d81-94fc-3a554f370291}</BaseInterpreter>
       <Version>3.5</Version>
       <Description>envs (Test2)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
@@ -171,4 +170,5 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
