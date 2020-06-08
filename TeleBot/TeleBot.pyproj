@@ -5,7 +5,8 @@
     <Name>TeleBot</Name>
     <RootNamespace>TeleBot</RootNamespace>
     <WebBrowserPort>1204</WebBrowserPort>
-    <InterpreterId>MSBuild|myenv|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>{8de35c41-9fd6-4cf4-b836-6b6b491c77fd}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -108,6 +109,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="..\..\envs\">
+      <Id>{8de35c41-9fd6-4cf4-b836-6b6b491c77fd}</Id>
+      <BaseInterpreter>{3a2b1101-1c2f-4d81-94fc-3a554f370291}</BaseInterpreter>
+      <Version>3.5</Version>
+      <Description>envs (Test2)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>
+      </PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
     <Interpreter Include="myenv\">
       <Id>myenv</Id>
       <Version>3.7</Version>
