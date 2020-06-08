@@ -13,10 +13,7 @@ For example, you might have a `urls.py` that looks something like this:
 
     urlpatterns = router.urls
 """
-from __future__ import unicode_literals
-
 import itertools
-import warnings
 from collections import OrderedDict, namedtuple
 
 from django.conf.urls import url
@@ -35,35 +32,11 @@ Route = namedtuple('Route', ['url', 'mapping', 'name', 'detail', 'initkwargs'])
 DynamicRoute = namedtuple('DynamicRoute', ['url', 'name', 'detail', 'initkwargs'])
 
 
-class DynamicDetailRoute(object):
-    def __new__(cls, url, name, initkwargs):
-        warnings.warn(
-            "`DynamicDetailRoute` is pending deprecation and will be removed in 3.10 "
-            "in favor of `DynamicRoute`, which accepts a `detail` boolean. Use "
-            "`DynamicRoute(url, name, True, initkwargs)` instead.",
-            PendingDeprecationWarning, stacklevel=2
-        )
-        return DynamicRoute(url, name, True, initkwargs)
-
-
-class DynamicListRoute(object):
-    def __new__(cls, url, name, initkwargs):
-        warnings.warn(
-            "`DynamicListRoute` is pending deprecation and will be removed in 3.10 in "
-            "favor of `DynamicRoute`, which accepts a `detail` boolean. Use "
-            "`DynamicRoute(url, name, False, initkwargs)` instead.",
-            PendingDeprecationWarning, stacklevel=2
-        )
-        return DynamicRoute(url, name, False, initkwargs)
-
-
 def escape_curly_brackets(url_path):
     """
     Double brackets in regex of url_path for escape string formatting
     """
-    if ('{' and '}') in url_path:
-        url_path = url_path.replace('{', '{{').replace('}', '}}')
-    return url_path
+    return url_path.replace('{', '{{').replace('}', '}}')
 
 
 def flatten(list_of_lists):
@@ -73,21 +46,25 @@ def flatten(list_of_lists):
     return itertools.chain(*list_of_lists)
 
 
-class BaseRouter(object):
+class BaseRouter:
     def __init__(self):
         self.registry = []
 
-    def register(self, prefix, viewset, base_name=None):
-        if base_name is None:
-            base_name = self.get_default_base_name(viewset)
-        self.registry.append((prefix, viewset, base_name))
+    def register(self, prefix, viewset, basename=None):
+        if basename is None:
+            basename = self.get_default_basename(viewset)
+        self.registry.append((prefix, viewset, basename))
 
-    def get_default_base_name(self, viewset):
+        # invalidate the urls cache
+        if hasattr(self, '_urls'):
+            del self._urls
+
+    def get_default_basename(self, viewset):
         """
-        If `base_name` is not specified, attempt to automatically determine
+        If `basename` is not specified, attempt to automatically determine
         it from the viewset.
         """
-        raise NotImplementedError('get_default_base_name must be overridden')
+        raise NotImplementedError('get_default_basename must be overridden')
 
     def get_urls(self):
         """
@@ -149,16 +126,16 @@ class SimpleRouter(BaseRouter):
 
     def __init__(self, trailing_slash=True):
         self.trailing_slash = '/' if trailing_slash else ''
-        super(SimpleRouter, self).__init__()
+        super().__init__()
 
-    def get_default_base_name(self, viewset):
+    def get_default_basename(self, viewset):
         """
-        If `base_name` is not specified, attempt to automatically determine
+        If `basename` is not specified, attempt to automatically determine
         it from the viewset.
         """
         queryset = getattr(viewset, 'queryset', None)
 
-        assert queryset is not None, '`base_name` argument not specified, and could ' \
+        assert queryset is not None, '`basename` argument not specified, and could ' \
             'not automatically determine the name from the viewset, as ' \
             'it does not have a `.queryset` attribute.'
 
@@ -208,8 +185,7 @@ class SimpleRouter(BaseRouter):
 
         return Route(
             url=route.url.replace('{url_path}', url_path),
-            mapping={http_method: action.__name__
-                     for http_method in action.bind_to_methods},
+            mapping=action.mapping,
             name=route.name.replace('{url_name}', action.url_name),
             detail=route.detail,
             initkwargs=initkwargs,
@@ -342,7 +318,7 @@ class DefaultRouter(SimpleRouter):
             self.root_renderers = kwargs.pop('root_renderers')
         else:
             self.root_renderers = list(api_settings.DEFAULT_RENDERER_CLASSES)
-        super(DefaultRouter, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def get_api_root_view(self, api_urls=None):
         """
@@ -360,7 +336,7 @@ class DefaultRouter(SimpleRouter):
         Generate the list of URL patterns, including a default root view
         for the API, and appending `.json` style format suffixes.
         """
-        urls = super(DefaultRouter, self).get_urls()
+        urls = super().get_urls()
 
         if self.include_root_view:
             view = self.get_api_root_view(api_urls=urls)

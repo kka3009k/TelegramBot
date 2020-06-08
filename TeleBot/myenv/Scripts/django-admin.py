@@ -1,4 +1,4 @@
-#!D:\TelegramBot\TeleBot\myenv\Scripts\python.exe
+#!D:\TestFolder\TelegramBot\TeleBot\myenv\Scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":

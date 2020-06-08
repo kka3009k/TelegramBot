@@ -109,17 +109,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="..\..\envs\">
-      <Id>{8de35c41-9fd6-4cf4-b836-6b6b491c77fd}</Id>
-      <Version>3.5</Version>
-      <Description>envs (Test2)</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <LibraryPath>Lib\</LibraryPath>
-      <PathEnvironmentVariable>
-      </PathEnvironmentVariable>
-      <Architecture>X86</Architecture>
-    </Interpreter>
     <Interpreter Include="myenv\">
       <Id>myenv</Id>
       <Version>3.7</Version>

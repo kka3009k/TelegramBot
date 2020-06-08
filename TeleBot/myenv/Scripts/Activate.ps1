@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="D:\TelegramBot\TeleBot\myenv"
+$env:VIRTUAL_ENV="D:\TestFolder\TelegramBot\TeleBot\myenv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
