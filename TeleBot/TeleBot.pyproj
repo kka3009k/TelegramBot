@@ -6,6 +6,9 @@
     <RootNamespace>TeleBot</RootNamespace>
     <WebBrowserPort>1204</WebBrowserPort>
     <InterpreterId>MSBuild|myenv|$(MSBuildProjectFullPath)</InterpreterId>
+    <PythonRunWebServerCommandType />
+    <PythonDebugWebServerCommandType />
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>

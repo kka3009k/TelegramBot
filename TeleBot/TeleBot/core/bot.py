@@ -3,7 +3,11 @@ from datetime import datetime
 import json
 import requests
 from telebot.types import *
-
+from .models import * 
+from datetime import datetime
+import schedule
+import time
+import threading
 #Получение курс валют с сайта www.bankasia.kg
 def get_and_parse():
     res = ''
@@ -57,3 +61,33 @@ def get_mark_keyboard(rows: str, vis: bool):
         keyboard.add(i)
     return keyboard
 
+#Создание пользователя
+def create_user(data: dict):
+    print(data)
+    user = UsersBot.objects.get(user_id=data.id)
+    if user == None:
+        print("create")
+        user = UsersBot.objects.create(user_id=data.id,full_name = str(data.first_name) + ' ' + str(data.last_name),date_create=datetime.now())
+        user.save()
+    else:
+        print("update")
+        user.full_name = str(data.first_name) + ' ' + str(data.last_name)
+        user.save()
+
+
+
+#Удаление файлов
+def job():
+    print("Удаляю файлы")
+
+schedule.every(1).minutes.do(job)
+#schedule.every().day.at("10:30").do(job)
+def polling():
+    while 1:
+        schedule.run_pending()
+        time.sleep(1)
+
+x = threading.Thread(target=polling)
+x.start()
+
+##################################################
