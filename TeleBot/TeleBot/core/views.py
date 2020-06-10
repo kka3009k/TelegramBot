@@ -7,12 +7,12 @@ from django.utils.decorators import method_decorator
 from rest_framework.response import * 
 from rest_framework.decorators import api_view
 from rest_framework import status
-import telebot
+from telebot import *
 from TeleBot.core.bot import *
 from .models import * 
 
 
-bot = telebot.TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
+bot = TeleBot('1212419724:AAHgTJvXsv5njwJxv4-S_myvZOy95LxBFVg')
 
 #Проверка авторизации
 def auth(func):
@@ -28,7 +28,7 @@ def auth(func):
 def start_message(message):
     res = 'Привет {0}, я Бот Банк Азии:\nВот что я умею:\nПоказать курс валют - /rate \nПоказать погоду за день - /weath'.format(message.chat.first_name)
     row = []
-    row.append('A')
+    row.append('Конвертер валют')
     bot.send_message(message.chat.id, res,reply_markup=get_mark_keyboard(row,True))
     try:
         create_user(message.from_user)
@@ -56,11 +56,30 @@ def get_weather_message(message):
     bot.send_message(message.chat.id, weath)
 
 
-@bot.message_handler(content_types=['text'])
-def get_keyboard_message(message):
-    a=''
-    #Логика
-        
+@bot.message_handler(regexp="Конвертер")
+def handle_message(message):
+    keyboard = types.InlineKeyboardMarkup()
+    url_button = types.InlineKeyboardButton(text="Сомы в ->  💲", callback_data="dollars")
+    keyboard.add(url_button)
+    bot.send_message(message.chat.id, 'Выбери конвертацию:',reply_markup=keyboard)
+
+
+@bot.callback_query_handler(func=lambda call: True)
+def handle_message(call):      
+    if call.data == "dollars":
+        bot.send_message(call.message.chat.id, 'Введите сумму начиная с $:')
+
+   
+
+@bot.message_handler(content_types=["text"])
+def handle_message(message):
+    convert_valute = message.text.find("$")
+    print(convert_valute)
+    if convert_valute == 0:
+        bot.send_message(message.chat.id, str(float(message.text.replace("$","").strip())*2))
+    print("dsd")
+
+
         
     
     
@@ -85,8 +104,12 @@ def send_bot_message(request):
            return Response(data=str(ex), status=status.HTTP_400_BAD_REQUEST)
 
 
-bot.polling(none_stop=True, interval=0)
 
+def bot_polling():
+    bot.polling(none_stop=True, interval=0)
+
+x = threading.Thread(target=bot_polling)
+x.start()
    
 
 

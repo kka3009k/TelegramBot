@@ -76,18 +76,18 @@ def create_user(data: dict):
 
 
 
-#Удаление файлов
-def job():
-    print("Удаляю файлы")
+##Удаление файлов
+#def job():
+#    print("Удаляю файлы")
 
-schedule.every(1).minutes.do(job)
-#schedule.every().day.at("10:30").do(job)
-def polling():
-    while 1:
-        schedule.run_pending()
-        time.sleep(1)
+#schedule.every(1).minutes.do(job)
+##schedule.every().day.at("10:30").do(job)
+#def polling():
+#    while 1:
+#        schedule.run_pending()
+#        time.sleep(1)
 
-x = threading.Thread(target=polling)
-x.start()
+#x = threading.Thread(target=polling)
+#x.start()
 
-##################################################
+###################################################
