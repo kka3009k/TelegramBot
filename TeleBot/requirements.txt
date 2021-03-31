@@ -4,7 +4,7 @@ chardet==3.0.4
 Django==2.0
 djangorestframework==3.11.0
 idna==2.9
-lxml==4.5.1
+lxml==4.6.3
 pip==19.0.3
 psycopg2==2.8.5
 pyTelegramBotAPI==3.7.1
